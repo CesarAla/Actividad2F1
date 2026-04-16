@@ -17,7 +17,7 @@
   <body>
     <nav class="navbar contenedor">
       <!--Inicio header-->
-      <a href="#" class=nav-brand"">MANGASTORE</a>
+      <a href="#" class="nav-brand">MANGASTORE</a>
       <ul class="nav-items">
         <li><a href="#">Home</a></li>
         <li><a href="#">Productos</a></li>
@@ -26,10 +26,17 @@
       </ul>
     </nav>
     <!--Inicio main-->
+    <main class="contenedor principal">
+      <article class="contenido-principal">
+        <h2 class="centrar-texto">Nuestros Productos</h2>
+        <section class="nuestros productos">
+          
+
+          <div class="productos">
     
-    <h2 >Nuestros Productos</h2>
-    
-    <img src="img/manga1.jpg" alt="Portada Demon Slayer Vol. 1" />
+          <div class="card">
+             <div class="card-img"><img src="img/manga1.jpg" alt="Portada Demon Slayer Vol. 1" /></div>
+            
   
     <h3>Demon Slayer - Vol. 1</h3>
     <p>
@@ -39,8 +46,11 @@
       expedita adipisci illo delectus aut?
     </p>
     <p>$99999</p>
-
-    <img src="img/manga2.jpg" alt="Blue Period - Vol. 6" />
+          </div>
+          <div class="card">
+           <div class="card-img"> <img src="img/manga2.jpg" alt="Blue Period - Vol. 6" /></div>
+           
+   
     <h3>Blue Period - Vol. 6</h3>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
@@ -49,8 +59,10 @@
       Repellendus corporis quis consequuntur rem?
     </p>
     <p>$99999</p>
-
-    <img src="img/manga3.webp" alt="Jujutsu Kaisen - Vol. 1" />
+        </div>
+    <div class="card">
+     <div class="card-img">  <img src="img/manga3.webp" alt="Jujutsu Kaisen - Vol. 1" /></div>
+  
 
     <h3>Jujutsu Kaisen - Vol. 1</h3>
     <p>
@@ -60,9 +72,11 @@
       non fugit. Fugit quasi possimus fuga veritatis.
     </p>
     <p>$99999</p>
-
+        </div>
+    <div class="card">
+    <div class="card-img">
     <img src="img/manga4.jpg" alt="Vagabond - Vol. 37" />
-
+    </div>
     <h3>Vagabond - Vol. 37</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
@@ -71,27 +85,43 @@
       voluptates doloremque non modi! Magnam, modi?
     </p>
     <p>$99999</p>
-        
-    <h2 class="title">Mangas más vendidos</h2>
-    <ul>
+    </div>
+      
+    </div>
+    </div>
+        </section>
+
+
+    <section class="mas-vendidos">       
+    <h2 class="centrar-texto">Mangas más vendidos</h2>
+    <ul class="listado">
       <li>
+        
         <img src="img/manga1.jpg" alt="manga vendido" />
+        
         <span>Demon Slayer - Vol. 1</span>
       </li>
       <li>
         <img src="img/manga2.jpg" alt="manga vendido" />
+        
         <span>Blue Period - Vol. 6</span>
       </li>
       <li>
         <img src="img/manga3.webp" alt="manga vendido" />
+        
         <span>Jujutsu Kaisen - Vol. 1</span>
       </li>
       <li>
         <img src="img/manga4.jpg" alt="manga vendido" />
+       
         <span>Vagabond - Vol. 37</span>
       </li>
-    </ul>
-  
+    </ul></section>
+      </article>
+
+   
+ 
+  </main>
   <h2>blog</h2>
   
   <img src="img/blog1.jpg" alt="blog cover" />
@@ -164,12 +194,16 @@
   </form>
 
 <!--Inicio footer-->
+<footer class="contenedor">
+  <section class="footer-info">
+  <div class="info">
   <h3>MANGASTORE</h3>
   <p>
     Tu tienda especializada en manga y cultura japonesa. Ediciones
     nuevas, colecciones y preventas.
   </p>
-
+  </div>
+  <div class="info">
   <address>
     <h4>Contacto</h4>
     <ul>
@@ -182,13 +216,15 @@
       <li>Horario: Lun–Sáb 10:00–19:00</li>
     </ul>
   </address>
-
+  </div>
+  <div class="info">
   <h4>Sucursales</h4>
   <ul>
     <li>Av. falsa 1234, Arica</li>
     <li>Calle mentira 567, Iquique</li>
   </ul>
-  
+  </div>
+<div class="info">
   <h4>Enlaces</h4>
   <ul>
     <li><a href="#">Términos y condiciones</a></li>
@@ -196,13 +232,16 @@
     <li><a href="#">Despachos y devoluciones</a></li>
     <li><a href="#">Preguntas frecuentes</a></li>
   </ul>
-
+  </div>
+  </section>
+  <section class="footer-copy">
   <p>© 2025 MANGASTORE SpA. Todos los derechos reservados.</p>
-  <ul>
+  <ul class="contantos">
     <li><a href="#" aria-label="Facebook">Facebook</a></li>
     <li><a href="#" aria-label="Instagram">Instagram</a></li>
     <li><a href="#" aria-label="X (Twitter)">X</a></li>
   </ul>
-      
+  </section>
+    </footer>
   </body>
 </html>
