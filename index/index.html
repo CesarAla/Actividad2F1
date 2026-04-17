@@ -28,8 +28,9 @@
     <!--Inicio main-->
     <main class="contenedor principal">
       <article class="contenido-principal">
-        <h2 class="centrar-texto">Nuestros Productos</h2>
-        <section class="nuestros productos">
+          
+        <section class="nuestros-productos">
+          <h2 class="centrar-texto">Nuestros Productos</h2>
           
 
           <div class="productos">
@@ -38,6 +39,8 @@
              <div class="card-img"><img src="img/manga1.jpg" alt="Portada Demon Slayer Vol. 1" /></div>
             
   
+
+
     <h3>Demon Slayer - Vol. 1</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -88,7 +91,7 @@
     </div>
       
     </div>
-    </div>
+  
         </section>
 
 
@@ -121,7 +124,35 @@
 
    
  
-  </main>
+    </main>
+    
+    <section class="blog contenedor">
+    <h2 class="centrar-texto">Blog</h2>
+
+    <article class="entrada-blog">
+        <img src="img/blog1.jpg" alt="Blog 1">
+        <div class="blog-contenido">
+            <h3>Nuevos lanzamientos</h3>
+            <p>
+                En esta sección mostramos novedades del mundo del manga y recomendaciones
+                para quienes buscan nuevas lecturas.
+            </p>
+        </div>
+    </article>
+
+    <article class="entrada-blog">
+        <img src="img/blog2.jpg" alt="Blog 2">
+        <div class="blog-contenido">
+            <h3>Consejos para coleccionistas</h3>
+            <p>
+                Aquí encontrarás ideas para cuidar, organizar y mantener en buen estado
+                tu colección de mangas.
+            </p>
+        </div>
+    </article>
+</section>
+
+<!--
   <h2>blog</h2>
   
   <img src="img/blog1.jpg" alt="blog cover" />
@@ -161,9 +192,11 @@
   </blockquote>
   <p>Por Maria las Petunias</p>
   <time datetime="2025-09-20">20/09/2025</time>
+-->
 
 <!-- About -->
-  <h2>Sobre Nosotros</h2>
+ <section class="sobre-nosotros contenedor">
+  <h2 class="centrar-texto">Sobre Nosotros</h2>
   <p>
     En <strong>MANGASTORE</strong> nos apasiona el mundo del manga y el
     cómic. Desde nuestros inicios, buscamos acercar a los lectores las
@@ -178,9 +211,12 @@
   </p>
 </section>
 
+
+
 <!-- Contacto -->
-  <h2>Contáctanos</h2>
-  <form action="#" method="post">
+<section class="contacto contenedor">
+  <h2 class="centrar-texto">Contáctanos</h2>
+  <form class="formulario" action="#" method="post">
     <label for="name">Nombre</label>
     <input type="text" id="name" name="name" required />
 
@@ -192,6 +228,7 @@
 
     <button type="submit">Enviar</button>
   </form>
+</section>
 
 <!--Inicio footer-->
 <footer class="contenedor">
@@ -236,7 +273,7 @@
   </section>
   <section class="footer-copy">
   <p>© 2025 MANGASTORE SpA. Todos los derechos reservados.</p>
-  <ul class="contantos">
+  <ul class="contactos">
     <li><a href="#" aria-label="Facebook">Facebook</a></li>
     <li><a href="#" aria-label="Instagram">Instagram</a></li>
     <li><a href="#" aria-label="X (Twitter)">X</a></li>

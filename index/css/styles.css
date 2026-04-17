@@ -17,8 +17,9 @@ body {
   font-style: normal;
   font-size: 1.6rem; /* Configuracion rem */
   background-image: url('../img/background.jpg'); /* los dos ".." es para ir hacia atras */
-  position: center;
+  background-position: center;/* Corregido*/
   background-attachment: fixed;
+  margin: 0;
 }
 .navbar{
   background-color: black;
@@ -34,7 +35,7 @@ body {
 .nav-brand{
   color: white;
   text-decoration: none;
-  font-size: 2.3 rem;
+  font-size: 2.3rem;
   margin: 2rem;
 
 }
@@ -50,11 +51,12 @@ body {
   margin: 2rem;
 }
 
-.centrar-textp{
+.centrar-texto{
   text-align: center;
 }
 .productos{
   display: flex;
+  flex-wrap: wrap;/* Agregado */
 }
 
 img{
@@ -62,15 +64,33 @@ img{
 
 }
 .card{
-  flex-basis: 25%;
-  margin: 0.5rem;
+  flex-basis: calc(25% - 2rem);/* modificado antes solo era 25% */
+  margin: 1rem;
 }
+/* Agregado */
+.card p{
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+.card h3{
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+/* Verificar */
+.card span{
+  font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+}
+/*  */
 
 .principal{
   background-color: white;
+  padding: 2rem; /* Agregado */
 }
 .contenido-principal{
   display: flex;
+  gap: 3rem; /* Agregado */
 }
 
 .card-img{
@@ -82,20 +102,37 @@ img{
 }
 .mas-vendidos{
   flex-basis: 25%;
+  padding-left: 0;/* Agregado */
 }
+/* Agregado */
+.listado{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Agregado */
 
 .listado li{
   display: flex;
-  padding: 2rem 0;
+  align-items: center;
+  padding: 1.5rem 0; /* Modificado */
   border-bottom: solid .1rem #ddd;
 }
 .listado li img{
   height: 7rem;
   width: 5rem;
+/* Agregado */
+object-fit: cover;
+border: solid .1rem #ccc;
+
 }
 .listado li span{
-  margin: 0 .2rem;
+  margin-left: 1rem;/* Modificado era 0 .2rem */
   font-size: 1.4rem;
+  /* Agregado */
+  font-weight: bold;
 
 
 }
@@ -103,16 +140,19 @@ img{
 footer{
   background-color: black;
 }
+
 .footer-info{
   display: flex;
   color: white;
+  
+/* Agregado*/
+  border-top: solid .1rem #222;
+  border-bottom: solid .1rem #222;
+  padding: 2rem 0;
 
 }
-.footer-info{
-  display: flex;
-  color: white;
-  border-bottom: solid .1rem gray;
-}
+
+
 .info{
   flex-basis: calc(25% - 2rem);
   margin: 0 2rem;
@@ -128,10 +168,15 @@ footer{
   color: white;
 }
 
+
+/* Modificado*/
 .footer-copy{
   display: flex;
   color:white;
   justify-content: space-between;
+
+  align-items: center;
+  padding: 2rem 0;
 }
 .contactos{
   display: flex;
@@ -142,4 +187,111 @@ footer{
   text-decoration: none;
   color:white;
   margin: 0 2rem;
+}
+
+
+
+/* Agregado*/
+.blog{
+  background-color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.entrada-blog{
+  background-color: lightcyan;
+  border-radius: .9rem;
+  height: 40rem;
+  display: flex;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.entrada-blog img{
+  flex-basis: 20%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-contenido{
+  flex-basis: 80%;
+  padding: 4rem;
+}
+
+.sobre-nosotros{
+  background-color: white;
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+}
+.sobre-nosotros h2{
+margin-top: 0;
+margin-bottom: 2rem;
+font-size: 2.4rem;
+}
+
+.sobre-nosotros p{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+}
+
+
+/* Agregado*/
+
+.contacto{
+  background-color: white;
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+}
+.contacto h2{
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.formulario label{
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+}
+
+.formulario input,
+.formulario textarea{
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: solid .1rem #ccc;
+  border-radius: .2rem;
+  font-family: "Coming Soon", cursive;
+}
+
+.formulario button{
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: "Coming Soon", cursive;
+
+}
+/* Agregado */
+
+.nuestros-productos h2{
+  margin-top: 2.8rem;
+  margin-bottom: 2rem;
+}
+/* Agregado */
+.mas-vendidos h2{
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
 }
